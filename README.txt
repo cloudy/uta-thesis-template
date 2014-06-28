@@ -1,3 +1,10 @@
+utathesis
+=========
+
+Template for UT Arlington theses.
+
+=========
+
 Below are some common formatting problems with solutions.
 Fri Jan 11 15:36:58 CST 2008, submitted by Darin Brezeale 
 Wed Jul 20 10:58:01 CDT 2011, updated by Darin Brezeale
