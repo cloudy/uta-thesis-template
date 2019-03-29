@@ -120,12 +120,8 @@
 \def\author#1{
   \def\auth@r{#1}
   \def\auth@rcaps{\uppercase{#1}}}
-\def\committee#1#2#3#4#5{
-  \def\superpr@f{#1}
-  \def\memb@rA{#2}
-  \def\memb@rB{#3}
-  \def\memb@rC{#4}
-  \def\memb@rD{#5}}
+\def\committee#1{
+  \def\superpr@f{#1}}
 \def\title#1{\def\ti@tle{#1}}
 \def\degree#1{\def\d@gree{#1}}
 \def\graduationmonth#1{\def\gr@duationmonth{#1}}
@@ -139,8 +135,8 @@
 \def\appr@val
   {The members of the Committee approve the doctoral \vspace{-2ex}\\
    dissertation of { \auth@r} \par}
-\def\d@gree{DOCTOR OF PHILOSOPHY} 
-\def\d@greeinit{Ph.D.}
+\def\d@gree{HONORS BACHELOR OF SCIENCE IN COMPUTER ENGINEERING} 
+\def\d@greeinit{H.B.S. in Computer Engineering}
 \def\printDefenseDate{
 \makeatletter
 \begin{flushright}
@@ -255,39 +251,6 @@
 \def\newheadline{\protect\\}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SIGNATURE PAGE
-%%%%%%%%%%%%%%%%%
-
-\def\signaturepagePhD{
-  \newpage \thispagestyle{empty}
-  \vspace*{36\p@}
-%  {\centering \large\bf\ti@tle \par }
-   {\centering \normalsize\ti@tle \par }
-  \vspace{1in}
-  \noindent\appr@val
-  \vspace{0.25in}
-
-  {\hskip -37\p@
-  \begin{tabular}{p{2.3in}p{3.5in}}
-  %     \rule{0ex}{8ex}\superpr@f & \hrule \\     % Signature line with Supervisor's Name - modified by V K Prabhu
-        \rule{0ex}{8ex}\superpr@f &   \\
-     \end{tabular} \par}
-  %\noindent Supervising Professor
-   \noindent Supervising Professor \hspace*{0.85in} \hrulefill \hspace*{0.27in} % Signature line with with Title - modified by V K Prabhu
-     
-  \vspace*{-0.1in}
-     
-  {\hskip -37\p@
-    \begin{tabular}{p{2.3in}p{3.5in}}
-      \rule{0ex}{8ex}\memb@rA & \hrule \\
-      \rule{0ex}{6ex}\memb@rB & \hrule \\
-      \rule{0ex}{6ex}\memb@rC & \hrule \\
-      \rule{0ex}{6ex}\memb@rD & \hrule \\
-%     \rule{0ex}{6ex}Mini~Vasudevan & \hrule \\
-      \rule{0ex}{6ex}Dean of the Graduate School & \hrule
-    \end{tabular} }
-  \newpage}   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TITLE PAGE
@@ -302,7 +265,7 @@
     \vspace{0.5in}
     by \\ \auth@rcaps \\
     \vspace{1in}
-        Presented to the Faculty of the Graduate School of \\
+        Presented to the Faculty of the Honors College of \\
     The University of Texas at Arlington in Partial Fulfillment \\
         of the Requirements \\ for the Degree of \\
     \vspace{0.5in}
@@ -344,7 +307,7 @@
 %               \begin{center} and \end{center}.
 %
 \newcommand{\dedication}{
-        \chapter*{\vspace*{-6.5in}BIOGRAPHICAL STATEMENT}
+        \chapter*{\vspace*{-6.5in}BIOGRAPHICAL INFORMATION}
 %       \thispagestyle{empty}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%VKP%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -367,10 +330,10 @@
   \myskip\myskip
 % {\centering {\large\bf\ti@tle}\par\myskip
   {\centering {\normalsize\ti@tle}\par\myskip
-              %Publication No. \rule{0.5in}{0.5\p@}\par\myskip
-              \auth@r , \d@greeinit\par
+              Publication No. \rule{0.5in}{0.5\p@}\par\myskip
+              \auth@r , \d@greeinit\par\myskip
         The University of Texas at Arlington, \gr@duationyear\par\myskip}
-  \myskip\noindent Supervising Professor: \superpr@f \par\myskip
+  \myskip\noindent Faculty Mentor: \superpr@f \par\myskip
 }{}
  
 
@@ -494,7 +457,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\thebiography{
   \renewcommand{\@chapapp}{CHAPTER}
-  \chapter*{BIOGRAPHICAL STATEMENT}
+  \chapter*{BIOGRAPHICAL INFORMATION}
   
 }
 
@@ -677,3 +640,4 @@
               \parsep 0\p@
               \topsep 0\p@
               \itemsep0\p@}
+

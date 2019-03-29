@@ -1,5 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%  UTA Ph.D. Dissertation Document Generation Using Tex/Latex   %%%%%%%%%%%%%%%%%%%
+%%%%  UTA Honors College Dissertation Document Generation Using Tex/Latex  
+%%%% Adapted from https://github.com/isura/utathesis
+%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Tex/Latex is one of the widely used software to generate many technical and other
 %     documents including thesis/dissertations at many universities including UTA.
@@ -63,15 +65,17 @@
     \begin{document}
     \input{psfig.sty}
 %     SAMPLE FRONT MATTER:
-       \graduationmonth{December}
-       \graduationyear{2003}
-       \defensedate{November 15, 2003}
-       \author{JAY VICTOR SMITH}
-       \committee{Vasant K. Prabhu}{Jonathan Bredow}{Jung-Chih~Chiao}{Sajal~K.~Das}{Harold
-       Sobol}
-       \title{COMPARATIVE ANALYSIS OF PARTIALLY COHERENT AND  DIFFERENTIALLY COHERENT PSK
-        SYSTEMS WITH \\ FADING AND COCHANNEL INTEREFERENCE}
+       \graduationmonth{May}
+       \graduationyear{2019}
+       \defensedate{April 12, 2019}
+       \author{Author Name}
+       \committee{Professor Name}
+       \title{TITLE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%  copyright page  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+         \copyrightpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  title page  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,26 +89,7 @@
 % added by Darin Brezeale, Fri Jan 11 10:29:12 CST 2008
 %       \signaturepageMs
 %        \signaturepagePhD
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%  copyright page  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-         \copyrightpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%  Dedication page  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\thispagestyle{empty}
-
-	\vspace*{1.0in}
-	\begin{center}
-		To my mother Sari and my uncle Luis Alfredo (my father figure)
-
-		who set the example and who made me who I am.
-	\end{center}
-
-\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  acknowledgements  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,3 +147,4 @@
 \input biography.tex
 
 \end{document}
+
